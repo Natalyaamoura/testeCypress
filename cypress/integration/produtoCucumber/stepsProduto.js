@@ -3,14 +3,12 @@ import Logins from '../../support/pages/login/index'
 import Produtos from '../../support/pages/produto/index'
 
 
-
-
-//Caminho feliz para compra de um produto
 Given('que o usuário está na página de produtos', () => {
 	Logins.acessarPagina();
     Logins.preencherLoginValido();
 });
 
+//Caminho feliz para compra de um produto
 When('o usuário tenta realizar uma compra', () => {
 	Produtos.adicionarProdutoNoCarrinhoEPreenchercadastro();
 });
